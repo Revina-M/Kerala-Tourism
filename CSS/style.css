@@ -13,16 +13,46 @@
     background-size:cover;
 }
 
-.myMarginlogin{
+.bbox{
    
-    background-color: white;
+  
+	
+        max-width: 400px;
+        width: 100%;
+        border-radius: 20px;
+        margin: 130px auto;
+        background-color: rgba(0, 0, 0, 0.658);
+        box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
+        -webkit-box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
+        -moz-box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
+        padding: 30px;
+        color: white;
+        
+        
+        
+
 }
 
-.myMarginsignup{
+.bbox1{
    
-    background-color: white;
+  
+	
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 102px ;
+    margin-left: 130px ;
+    background-color: rgba(0, 0, 0, 0.658);
+    box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
+    -webkit-box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
+    -moz-box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
+    padding: 30px;
+    color: white;
     
+    
+
 }
+
 
 .hi video {
     position: absolute;
@@ -76,4 +106,13 @@
 
 .gap{
     height: 20px;
+}
+
+/* 
+.bbox{
+    background-color: white;
+} */
+
+.forgotPassword7 {
+  
 }

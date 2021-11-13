@@ -17,19 +17,22 @@
    
   
 	
-        max-width: 400px;
+        max-width: 500px;
         width: 100%;
         border-radius: 20px;
-        margin:150px auto;
-        margin-top: 110px;
-        margin-left: 548px ;
+        /* margin:50% auto; */
+        margin-top: 80px;
+        margin-left: 500px ;
         background-color: rgba(0, 0, 0, 0.658);
         box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
         -webkit-box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
         -moz-box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
         padding: 30px;
         color: white;
+
         
+	
+   
         
         
 

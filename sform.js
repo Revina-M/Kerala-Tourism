@@ -22,7 +22,7 @@ const weak = document.querySelector(".weak");
 const medium = document.querySelector(".medium");
 const strong = document.querySelector(".strong");
 const btn = document.querySelector(".submit-btn");
-btn.classList.add("disabled");
+// btn.classList.add("disabled");
 var no=  0 ;
 let regExpWeak = /[a-z]+/;
 let regExpMedium = /\d+/;
@@ -30,6 +30,7 @@ let regExpCapital =/[A-Z]+/;
 let regExpStrong = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/;
 function checkPassword() {
     if (input.value != "") {
+        btn.classList.add("disabled");
         if (input.value.length <  8 && (input.value.match(regExpWeak) || input.value.match(regExpCapital) || input.value.match(regExpMedium) || input.value.match(regExpStrong))) no = 1;
         if (input.value.length >= 8 && ((input.value.match(regExpWeak) && input.value.match(regExpMedium)) || (input.value.match(regExpCapital) && input.value.match(regExpMedium)) || (input.value.match(regExpCapital) && input.value.match(regExpStrong)) || (input.value.match(regExpMedium) && input.value.match(regExpStrong)) || (input.value.match(regExpWeak) && input.value.match(regExpStrong)))) no = 2;
         if (input.value.length >= 8 && input.value.match(regExpWeak) && input.value.match(regExpMedium) && input.value.match(regExpCapital) && input.value.match(regExpStrong)) no = 3;
@@ -78,10 +79,14 @@ function svalidate(){
     e0.innerText = "";
     e1.innerText = "";
     e2.innerText = "";
-    // e4.innerText = "";
+    e3.innerText = "";
+    e4.innerText = "";
     e0.style.color = "red";
     e1.style.color = "red";
     e2.style.color = "red";
+    e3.style.color = "red";
+    e4.style.color = "red";
+
 
     if(sName.value.trim() === ''){
         e0.innerText = "Name required";
@@ -125,6 +130,12 @@ function svalidate(){
     
     }
 
+    
+    if(input.value === ''){
+        e3.innerText = "Password required";
+    }
+
+
     if(sPassword1Re.value.trim() === ''){
       
         e4.innerText = "Re-enter password";
@@ -167,7 +178,7 @@ function login_validate(){
 
   
     if(lEmail.value.trim() === ''){
-        ee0.innerText = "Email field cannot blank";
+        ee0.innerText = "Email field cannot be blank";
 
     }
     else{

@@ -117,8 +117,6 @@
     height: 200px;
 }
 
-
-
 /* 
 .bbox{
     background-color: white;
@@ -145,18 +143,25 @@
     padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:azure;
+    text-align: center;
 
 }
 .dis_sub{
     padding: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: azure;
+    font-size:large;
+    text-align:justify;
 
 }
 .bob{
-    background-image: url(../IMAGES/town.jpg);
-    background-size:cover;
+   background-color: black;
 }
+
+.car3{
+    padding: 10px;
+}
+
 
 
 .weak,.strong,.medium {

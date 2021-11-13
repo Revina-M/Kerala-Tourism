@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kerala Tourism-Sign Up</title>
     <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+
 </head>
 <body class="signupbody"> 
 
@@ -30,37 +34,75 @@
   
     <div class="d-flex justify-align-start">
   <div class="   bbox1" id="login">
-    <form>
-      <div class="mb-3">
-        <label for="inputname" class="form-label">Name</label>
-        <input type="text" class="form-control" id="inputname">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputEmail1"  class="form-label" >Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Enter a Password</label>
-         
-        <input type="password" class="form-control" id="exampleInputPassword1">
-        <div class="passwordHelpBlock" class="form-text" style="font-size: smaller;">
-          Your password must be 8-20 characters long.
+    <form action="login.html" onsubmit=" return svalidate()">
+      <div class="mb-5">
+        <div>
+          <label for="sName" class="form-label">Name</label>
+          <input type="text" class="form-control"  id="sName">
+          <small id="e0"></small>
         </div>
+        <br>
+      
+      <div>
+        <label for="sEmail"  class="form-label" >Email address</label>
+        <input type="email" class="form-control" id="sEmail" aria-describedby="emailHelp">
+        <small id="e1"></small>
       </div>
-  
+      <br>
      
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Reconfirm Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+      <div>
+        <label for="sPhone" class="form-label">Contact No</label>
+        <input type="text"   class="form-control" placeholder="Enter 10 digit mobile number" id="sPhone" >
+        <small id="e2"></small>
+      </div>
+      <div class="passwordHelpBlock" class="form-text" style="font-size:smaller;  font-style: italic; color:cornflowerblue">
+        xxxxxxxxxx , xxx xxx xxxx , xxx-xxx-xxxx , xxx.xxx.xxxx formats only allowed
+      </div>
+      <br>
+      <div>
+        <!-- <label for="sPassword1" class="form-label">Enter a Password</label>
+        <input type="password"class="form-control" id="spassword1"  >
+        
+        <small id="e3"></small> -->
+        
+        <!-- <p id="e3"></p> -->
+
+       
+
+      </div>
+
+      <div  >
+        <label for="password" class="form-label">Create Password</label>
+        <input onkeyup="checkPassword()" type="password" placeholder="Type password" class="form-control"
+            id="password">
+        <div class="icons">
+            <div class="weak alert alert-danger" role="alert">Weak Password</div>
+            <div class="medium alert alert-warning" role="alert">Medium Password</div>
+            <div class="strong alert alert-success" role="alert">Strong Password</div>
+        </div>
+        <!-- <a href="#" class="submit-btn btn btn-primary my-5">Submit</a> -->
+        <div class="passwordHelpBlock" class="form-text" style="font-size:smaller;  font-style: italic; color:cornflowerblue">
+          Minimum 8 characters required. Include atleast one lowercase and uppercase alphabets, digit and special character.
+        </div>
+</div>
+      
+   <br>
+     
+      <div>
+        <label for="sPassword1Re" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" placeholder="Re-type password" id="sPassword1Re">
+        <small id="e4"></small>
+      </div>
       </div>
      
     
-      <br>
-      
-     
+    
+     <!-- <input type="submit" class="submit-btn btn btn-outline-light me-2" id="submit" > -->
    
-      <a class="btn btn-outline-light me-2" href="login.html" role="button">Sign Up</a>
+      <!-- <a class="submit-btn btn btn-outline-light me-2" href="#"   role="button" type="submit"  id="submit">Sign Up</a> -->
+      <button class="submit-btn btn btn-outline-light me-2" type="submit">Sign Up</button>
+    </form> 
+      <script src="sform.js"></script>
     
 
 </div>

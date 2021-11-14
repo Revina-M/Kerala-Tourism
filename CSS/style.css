@@ -171,7 +171,9 @@
     padding: 10px;
 }
 
-
+.buttonspd{
+    padding-left:10px;
+}
 
 .weak,.strong,.medium {
     display: none;

@@ -1,34 +1,40 @@
-let sName = document.getElementById("sName");
-let sEmail = document.getElementById("sEmail");
-let sPhone = document.getElementById("sPhone");
-// let sPassword1 = document.getElementById("sPassword1");
-let sPassword1Re = document.getElementById("sPassword1Re");
-let e0 = document.getElementById("e0");
-let e1 = document.getElementById("e1");
-let e2 = document.getElementById("e2");
-let e3 = document.getElementById("e3");
-let e4 = document.getElementById("e4");
-var flagE = 0;
-var flagC = 0;
-var flagP = 0;
 
 
 
 
 
 
+
+// const input = document.querySelector("#password");
+// const weak = document.querySelector(".weak");
+// const medium = document.querySelector(".medium");
+// const strong = document.querySelector(".strong");
+// const btn = document.querySelector(".submit-btn");
+// // btn.classList.add("disabled");
+
+// let regExpWeak = /[a-z]+/;
+// let regExpMedium = /\d+/;
+// let regExpCapital =/[A-Z]+/;
+// let regExpStrong = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/;
+
+
+function checkPassword() {
+    
 const input = document.querySelector("#password");
 const weak = document.querySelector(".weak");
 const medium = document.querySelector(".medium");
 const strong = document.querySelector(".strong");
 const btn = document.querySelector(".submit-btn");
 // btn.classList.add("disabled");
-var no=  0 ;
+
 let regExpWeak = /[a-z]+/;
 let regExpMedium = /\d+/;
 let regExpCapital =/[A-Z]+/;
 let regExpStrong = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/;
-function checkPassword() {
+    var no=  0 ;
+
+
+
     if (input.value != "") {
         btn.classList.add("disabled");
         if (input.value.length <  8 && (input.value.match(regExpWeak) || input.value.match(regExpCapital) || input.value.match(regExpMedium) || input.value.match(regExpStrong))) no = 1;
@@ -76,6 +82,22 @@ function checkPassword() {
 
 
 function svalidate(){
+    const input = document.querySelector("#password");
+    let sName = document.getElementById("sName");
+    let sEmail = document.getElementById("sEmail");
+    let sPhone = document.getElementById("sPhone");
+    // let sPassword1 = document.getElementById("sPassword1");
+    let sPassword1Re = document.getElementById("sPassword1Re");
+    let e0 = document.getElementById("e0");
+    let e1 = document.getElementById("e1");
+    let e2 = document.getElementById("e2");
+    let e3 = document.getElementById("e3");
+    let e4 = document.getElementById("e4");
+    var flagE = 0;
+    var flagC = 0;
+    var flagP = 0;
+
+
     e0.innerText = "";
     e1.innerText = "";
     e2.innerText = "";
@@ -159,6 +181,22 @@ function svalidate(){
 }  
 
 // const iinput = document.querySelector("#lPassword1");
+
+
+function login_validate(){
+
+    // const input = document.querySelector("#password");
+    const weak = document.querySelector(".weak");
+    const medium = document.querySelector(".medium");
+    const strong = document.querySelector(".strong");
+    const btn = document.querySelector(".submit-btn");
+    // btn.classList.add("disabled");
+    
+    let regExpWeak = /[a-z]+/;
+    let regExpMedium = /\d+/;
+    let regExpCapital =/[A-Z]+/;
+    let regExpStrong = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/;
+
 lEmail = document.getElementById("lEmail");
 iinput = document.getElementById("lPassword");
 ee0 = document.getElementById("ee0");
@@ -167,7 +205,6 @@ var flagEE = 0;
 var flagPP = 0;
 var noo = 0;
 
-function login_validate(){
     ee0.innerText = "";
     ee1.innerText = "";
     ee0.style.color = "red";
@@ -193,8 +230,8 @@ function login_validate(){
         }
 
     }
-    console.log(iinput);
-    console.log(iinput.value);
+    // console.log(iinput);
+    // console.log(iinput.value);
     if(iinput.value.trim() === ''){
       
         ee1.innerText = "Password field cannot be blank";
